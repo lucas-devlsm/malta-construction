@@ -1,0 +1,185 @@
+// ========================================
+// Variables
+// ========================================
+$color-golden: #DBC377;
+$color-blue: #0E091E;
+$color-white: #ffffff;
+$color-text: #333333;
+$color-text-light: #666666;
+
+$font-primary: 'Raleway', sans-serif;
+$font-heading: 'Raleway', sans-serif;
+
+$container-max-width: 1200px;
+$container-padding: 20px;
+
+// ========================================
+// Reset & Base
+// ========================================
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+    // Custom Scrollbar - Webkit browsers (Chrome, Safari, Edge)
+    &::-webkit-scrollbar {
+        width: 8px;
+        
+        @media (max-width: 968px) {
+            width: 6px;
+        }
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: rgba($color-blue, 0.1);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, $color-golden 0%, darken($color-golden, 10%) 100%);
+        border-radius: 4px;
+        border: 1px solid rgba($color-blue, 0.1);
+        
+        &:hover {
+            background: linear-gradient(180deg, darken($color-golden, 5%) 0%, darken($color-golden, 15%) 100%);
+        }
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-text;
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-weight: 400;
+    
+    // Custom Scrollbar - Firefox
+    scrollbar-width: thin;
+    scrollbar-color: $color-golden rgba($color-blue, 0.1);
+}
+
+.container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 0 $container-padding;
+    
+    @media (max-width: 576px) {
+        padding: 0 15px;
+    }
+}
+
+// ========================================
+// Buttons
+// ========================================
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+    
+    &--primary {
+        background-color: $color-golden;
+        color: $color-blue;
+        
+        &:hover {
+            background-color: darken($color-golden, 10%);
+            transform: translateY(-2px);
+        }
+    }
+    
+    &--secondary {
+        background-color: transparent;
+        color: $color-golden;
+        border-color: $color-golden;
+        
+        &:hover {
+            background-color: $color-golden;
+            color: $color-blue;
+        }
+    }
+}
+
+// ========================================
+// Section Title
+// ========================================
+.section__header {
+    text-align: center;
+    margin-bottom: 4rem;
+    animation: fadeInUp 0.8s ease-out;
+    
+    @media (max-width: 768px) {
+        margin-bottom: 3rem;
+    }
+}
+
+.section__title {
+    font-family: $font-heading;
+    font-size: 2.75rem;
+    color: $color-blue;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    
+    &--golden {
+        color: $color-golden;
+    }
+    
+    @media (max-width: 768px) {
+        font-size: 2.25rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.section__divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, $color-golden, transparent);
+    margin: 0 auto 1.5rem;
+    border-radius: 2px;
+    
+    @media (max-width: 768px) {
+        width: 50px;
+        height: 2px;
+        margin-bottom: 1.25rem;
+    }
+}
+
+.section__subtitle {
+    font-size: 1.1rem;
+    color: $color-text-light;
+    font-weight: 400;
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.6;
+    
+    @media (max-width: 768px) {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+// ========================================
+// Import Sections
+// ========================================
+@import 'header';
+@import 'hero';
+@import 'footer';
+@import 'floating-buttons';
+@import 'nova-section';
+@import 'breadcrumb';
+@import 'sobre';
+@import 'holding-familiar';
+@import 'sessao-viabilidade';
+@import 'seminario';
+@import 'contato';
+@import 'materiais';
+@import 'faq';
