@@ -1,7 +1,7 @@
 <?php include __DIR__ . '/includes/head.php'; ?>
 
 <main>
-    <!-- Hero Section -->
+    <!-- Hero Section ------->
     <section class="hero" id="inicio">
         <div class="container">
             <div class="hero__content">
