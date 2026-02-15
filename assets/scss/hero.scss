@@ -3,7 +3,7 @@
 // ========================================
 .hero {
     background: linear-gradient(135deg, rgba($color-dark, 0.95) 0%, rgba(darken($color-dark, 5%), 0.95) 100%),
-                url('../img/bg-hero.png') center/cover no-repeat;
+                url('/assets/img/bg-hero.png') center/cover no-repeat;
     color: $color-white;
     padding: 120px 0 120px;
     position: relative;

@@ -4,7 +4,7 @@
 .sobre-hero {
     padding: 140px 0 100px;
     background: linear-gradient(135deg, rgba($color-dark, 0.95) 0%, rgba(darken($color-dark, 5%), 0.95) 100%),
-                url('../img/bg-hero.png') center/cover no-repeat;
+                url('/assets/img/bg-hero.png') center/cover no-repeat;
     position: relative;
     color: $color-white;
     min-height: 60vh;
