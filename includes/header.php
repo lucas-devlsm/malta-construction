@@ -2,31 +2,30 @@
     <div class="container">
         <div class="header__content">
             <a href="./" class="header__logo">
-                <img src="assets/img/logo.png" alt="Palladium - Planejamento Patrimonial Familiar">
+                <img src="assets/img/logo.png" alt="Construction Company">
             </a>
             
             <nav class="header__nav" id="headerNav">
                 <div class="header__nav-header">
                     <a href="./" class="header__logo-mobile">
-                        <img src="assets/img/logo.png" alt="Palladium - Planejamento Patrimonial Familiar">
+                        <img src="assets/img/logo.png" alt="Construction Company">
                     </a>
-                    <button class="header__close" id="mobileClose" aria-label="Fechar menu">
+                    <button class="header__close" id="mobileClose" aria-label="Close menu">
                         <span>×</span>
                     </button>
                 </div>
                 <ul class="header__menu">
-                    <li><a href="./" class="header__link">Início</a></li>
-                    <li><a href="/sobre" class="header__link">Sobre Nós</a></li>
+                    <li><a href="./" class="header__link">Home</a></li>
+                    <li><a href="about" class="header__link">About Us</a></li>
                     <li class="header__dropdown">
-                        <a href="/#solucoes" class="header__link">Soluções <span class="header__arrow">▼</span></a>
+                        <a href="#services" class="header__link">Services <span class="header__arrow">▼</span></a>
                         <ul class="header__submenu">
-                            <li><a href="/holding-familiar" class="header__sublink">Holding Familiar</a></li>
-                            <li><a href="/sessao-viabilidade" class="header__sublink">Sessão de Viabilidade</a></li>
-                            <li><a href="/seminario" class="header__sublink">Seminário</a></li>
+                            <li><a href="residential" class="header__sublink">Residential Construction</a></li>
+                            <li><a href="commercial" class="header__sublink">Commercial Construction</a></li>
+                            <li><a href="renovation" class="header__sublink">Renovation & Remodeling</a></li>
                         </ul>
                     </li>
-                    <li><a href="/#materiais" class="header__link">Materiais</a></li>
-                    <li><a href="/contato" class="header__link header__link--cta">Contato</a></li>
+                    <li><a href="contact" class="header__link header__link--cta">Contact</a></li>
                 </ul>
             </nav>
             

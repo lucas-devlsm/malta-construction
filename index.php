@@ -7,94 +7,84 @@
             <div class="hero__content">
                 <div class="hero__text">
                     <h1 class="hero__title">
-                        Especialistas em Planejamento Patrimonial Familiar e Holding Familiar
+                        Quality Construction Services <span>You Can Trust</span>
                     </h1>
                     <p class="hero__description">
-                        Oferecemos soluções jurídicas especializadas para proteger e gerenciar o patrimônio familiar através de estruturas de holding familiar e planejamento sucessório.
+                        We deliver exceptional residential and commercial construction projects with precision, quality, and professionalism. Building your vision, one project at a time.
                     </p>
                     <div class="hero__cta">
-                        <a href="/contato" class="btn btn--primary">Quero ser atendido</a>
-                        <a href="/sobre" class="btn btn--secondary">Saiba Mais</a>
+                        <a href="contact" class="btn btn--primary">Get a Quote</a>
+                        <a href="about" class="btn btn--secondary">Learn More</a>
                     </div>
                 </div>
                 <div class="hero__image">
-                    <img src="assets/img/socios.png" alt="Sócios da Palladium - Especialistas em Planejamento Patrimonial Familiar" loading="eager">
+                    <img src="assets/img/1.webp" alt="Malta Construction - Quality Building Services" loading="eager">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Soluções Section -->
-    <section class="solucoes" id="solucoes">
+    <section class="solucoes" id="services">
         <div class="container">
             <div class="section__header">
-                <h2 class="section__title">Soluções de Advocacia da <span class="section__title--golden">Palladium</span></h2>
+                <h2 class="section__title">Our <span class="section__title--golden">Services</span></h2>
                 <div class="section__divider"></div>
-                <p class="section__subtitle">Conheça nossas principais soluções jurídicas especializadas</p>
+                <p class="section__subtitle">Comprehensive construction solutions for residential and commercial projects</p>
             </div>
             <div class="solucoes__grid">
                 <div class="solucoes__card">
+                    <div class="solucoes__image">
+                        <img src="assets/img/3.webp" alt="Residential Construction" loading="lazy">
+                    </div>
+                    <div class="solucoes__icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="solucoes__card-content">
+                        <h3 class="solucoes__card-title">Residential Construction</h3>
+                        <p class="solucoes__card-text">
+                            From custom homes to renovations, we bring your residential vision to life with quality craftsmanship and attention to detail.
+                        </p>
+                        <a href="residential" class="solucoes__card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="solucoes__card">
+                    <div class="solucoes__image">
+                        <img src="assets/img/4.webp" alt="Commercial Construction" loading="lazy">
+                    </div>
                     <div class="solucoes__icon">
                         <i class="fas fa-building"></i>
                     </div>
-                    <h3 class="solucoes__card-title">Holding Familiar</h3>
-                    <p class="solucoes__card-text">
-                        Oferecemos uma estrutura jurídica e financeira completa que visa consolidar, proteger e gerenciar de forma eficiente e estratégica o patrimônio familiar, garantindo segurança jurídica e otimização tributária.
-                    </p>
-                    <a href="/holding-familiar" class="solucoes__card-link">
-                        Ver mais <i class="fas fa-arrow-right"></i>
-                    </a>
+                    <div class="solucoes__card-content">
+                        <h3 class="solucoes__card-title">Commercial Construction</h3>
+                        <p class="solucoes__card-text">
+                            Professional commercial construction services for offices, retail spaces, and industrial facilities. Delivered on time and on budget.
+                        </p>
+                        <a href="commercial" class="solucoes__card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="solucoes__card">
+                    <div class="solucoes__image">
+                        <img src="assets/img/5.webp" alt="Renovation & Remodeling" loading="lazy">
+                    </div>
                     <div class="solucoes__icon">
-                        <i class="fas fa-clipboard-check"></i>
+                        <i class="fas fa-tools"></i>
                     </div>
-                    <h3 class="solucoes__card-title">Sessão de Viabilidade</h3>
-                    <p class="solucoes__card-text">
-                        A Sessão de Viabilidade é muito mais que uma reunião. Trata-se de uma das partes mais importantes no serviço, onde faremos um diagnóstico completo para te revelar SE e COMO prosseguir na construção da sua Holding Familiar.
-                    </p>
-                    <a href="/sessao-viabilidade" class="solucoes__card-link">
-                        Ver mais <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                
-                <div class="solucoes__card">
-                    <div class="solucoes__icon">
-                        <i class="fas fa-graduation-cap"></i>
+                    <div class="solucoes__card-content">
+                        <h3 class="solucoes__card-title">Renovation & Remodeling</h3>
+                        <p class="solucoes__card-text">
+                            Transform your existing space with our expert renovation and remodeling services. Quality workmanship that enhances value and functionality.
+                        </p>
+                        <a href="renovation" class="solucoes__card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
-                    <h3 class="solucoes__card-title">Seminário – Holding Familiar</h3>
-                    <p class="solucoes__card-text">
-                        Fornecemos uma experiência educacional abrangente, apresentando conhecimentos especializados sobre a criação, gestão e otimização de holdings familiares de forma prática e objetiva.
-                    </p>
-                    <a href="/seminario" class="solucoes__card-link">
-                        Ver mais <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Materiais Section -->
-    <section class="materiais" id="materiais">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Materiais <span class="section__title--golden">Gratuitos</span></h2>
-                <div class="section__divider"></div>
-                <p class="section__subtitle">Baixe nossa apresentação e conheça mais sobre nossos serviços</p>
-            </div>
-            <div class="materiais__content">
-                <div class="materiais__card">
-                    <div class="materiais__icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <h3 class="materiais__title">Apresentação Palladium</h3>
-                    <p class="materiais__description">
-                        Conheça mais sobre a Palladium, nossos serviços, especialistas e como podemos ajudar você e sua família a proteger e otimizar seu patrimônio.
-                    </p>
-                    <a href="assets/pdf/apresentacao-palladium.pdf" download="apresentacao-palladium.pdf" class="btn btn--primary materiais__button">
-                        <i class="fas fa-download"></i> Baixar PDF
-                    </a>
                 </div>
             </div>
         </div>
@@ -104,55 +94,55 @@
     <section class="cta-section" id="contato">
         <div class="container">
             <div class="cta-section__content">
-                <h2 class="cta-section__title">Pronto para proteger seu patrimônio?</h2>
+                <h2 class="cta-section__title">Ready to Start Your Project?</h2>
                 <p class="cta-section__text">
-                    Entre em contato conosco e descubra como podemos ajudar você e sua família
+                    Contact us today for a free consultation and quote. Let's bring your construction vision to life.
                 </p>
                 <div class="cta-section__buttons">
-                    <a href="/contato" class="btn btn--primary">Quero ser atendido</a>
-                    <a href="https://api.whatsapp.com/send/?phone=51995612572&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Palladium." target="_blank" rel="noopener noreferrer" class="btn btn--secondary">Falar no WhatsApp</a>
+                    <a href="contact" class="btn btn--primary">Get a Quote</a>
+                    <a href="tel:+18436021986" class="btn btn--secondary">Call Us Now</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sócios Section -->
+    <!-- Team Section -->
     <section class="socios" id="sobre">
         <div class="container">
             <div class="section__header">
-                <h2 class="section__title">Nossos <span class="section__title--golden">Especialistas</span></h2>
+                <h2 class="section__title">Our <span class="section__title--golden">Team</span></h2>
                 <div class="section__divider"></div>
-                <p class="section__subtitle">Conheça a equipe de profissionais especializados que irá cuidar do seu patrimônio</p>
+                <p class="section__subtitle">Experienced professionals dedicated to delivering quality construction</p>
             </div>
             <div class="socios__content">
                 <div class="socios__item">
                     <div class="socios__image">
-                        <img src="assets/img/sócio Eliseu Schenkel da Luz.jpg" alt="Eliseu Schenkel da Luz - Sócio Fundador da Palladium" loading="lazy">
+                        <img src="assets/img/2.webp" alt="Construction Team Member" loading="lazy">
                     </div>
                     <div class="socios__text">
-                        <h3 class="socios__name">Eliseu Schenkel da Luz</h3>
-                        <p class="socios__role">Sócio Fundador</p>
+                        <h3 class="socios__name">Expert Construction Team</h3>
+                        <p class="socios__role">Professional Builders</p>
                         <p class="socios__description">
-                            Advogado especializado em Direito Empresarial, Planejamento Patrimonial e Holding Familiar com ampla experiência no mercado brasileiro. Possui expertise consolidada na estruturação de holdings patrimoniais, planejamento sucessório e consultoria jurídica estratégica para empresas e famílias de alto patrimônio.
+                            Our team consists of experienced construction professionals with years of expertise in residential and commercial building. We bring together skilled craftsmen, project managers, and construction specialists to ensure every project meets the highest standards of quality and safety.
                         </p>
                         <p class="socios__description">
-                            Com formação sólida e conhecimento aprofundado em legislação tributária e empresarial, atua na criação de soluções jurídicas personalizadas que visam a proteção patrimonial, otimização fiscal e sucessão familiar planejada.
+                            With a commitment to excellence and attention to detail, our team works collaboratively to deliver projects on time and within budget. We stay current with the latest construction techniques and building codes to provide you with the best possible results.
                         </p>
                     </div>
                 </div>
                 
                 <div class="socios__item socios__item--reverse">
                     <div class="socios__image">
-                        <img src="assets/img/Sócia Dra. Fernanda Sacon do Reis.jpg" alt="Dra. Fernanda Sacon do Reis - Sócia da Palladium" loading="lazy">
+                        <img src="assets/img/1.webp" alt="Construction Project Manager" loading="lazy">
                     </div>
                     <div class="socios__text">
-                        <h3 class="socios__name">Dra. Fernanda Sacon do Reis</h3>
-                        <p class="socios__role">Sócia</p>
+                        <h3 class="socios__name">Project Management Excellence</h3>
+                        <p class="socios__role">Dedicated Service</p>
                         <p class="socios__description">
-                            Advogada especialista em Direito Empresarial e Planejamento Sucessório, com destacada atuação em estruturas de holding familiar e consultoria patrimonial. Formada pelas melhores instituições do país, possui expertise em direito societário, contratos empresariais e gestão patrimonial familiar.
+                            Our project managers oversee every aspect of your construction project, from initial planning to final completion. We maintain clear communication throughout the process, keeping you informed and involved every step of the way.
                         </p>
                         <p class="socios__description">
-                            Reconhecida pela excelência no atendimento e pela capacidade de desenvolver soluções jurídicas inovadoras, atua de forma estratégica para garantir a segurança patrimonial e a sucessão familiar planejada, sempre com foco na proteção dos interesses dos clientes e de suas famílias.
+                            We understand that construction projects are significant investments, and we treat each one with the care and professionalism it deserves. Our goal is to exceed your expectations and deliver results that stand the test of time.
                         </p>
                     </div>
                 </div>
@@ -160,37 +150,61 @@
         </div>
     </section>
 
-    <!-- Benefícios Section -->
+    <!-- Benefits Section -->
     <section class="beneficios" id="beneficios">
         <div class="container">
             <div class="section__header">
-                <h2 class="section__title">Por Que Escolher <span class="section__title--golden">Planejamento Patrimonial?</span></h2>
+                <h2 class="section__title">Why Choose <span class="section__title--golden">Our Services?</span></h2>
                 <div class="section__divider"></div>
-                <p class="section__subtitle">Proteja seu patrimônio e garanta um futuro seguro para sua família com estratégias jurídicas especializadas</p>
+                <p class="section__subtitle">Quality construction services with professional expertise and reliable results</p>
             </div>
             
             <div class="beneficios__grid">
                 <div class="beneficios__card">
                     <div class="beneficios__icon-wrapper">
                         <div class="beneficios__icon">
-                            <i class="fas fa-shield-alt"></i>
+                            <i class="fas fa-award"></i>
                         </div>
                     </div>
-                    <h3 class="beneficios__title">Proteção Patrimonial</h3>
+                    <h3 class="beneficios__title">Quality Craftsmanship</h3>
                     <p class="beneficios__text">
-                        Proteja seus bens contra riscos empresariais, garantindo que o patrimônio familiar permaneça seguro mesmo em situações adversas.
+                        We use only the finest materials and proven construction techniques to ensure your project stands the test of time.
                     </p>
                 </div>
                 
                 <div class="beneficios__card">
                     <div class="beneficios__icon-wrapper">
                         <div class="beneficios__icon">
-                            <i class="fas fa-chart-line"></i>
+                            <i class="fas fa-clock"></i>
                         </div>
                     </div>
-                    <h3 class="beneficios__title">Otimização Tributária</h3>
+                    <h3 class="beneficios__title">On-Time Delivery</h3>
                     <p class="beneficios__text">
-                        Reduza significativamente a carga tributária através de estruturas legais eficientes, maximizando o patrimônio familiar.
+                        Our project management ensures your construction is completed on schedule, minimizing delays and keeping you informed.
+                    </p>
+                </div>
+                
+                <div class="beneficios__card">
+                    <div class="beneficios__icon-wrapper">
+                        <div class="beneficios__icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                    </div>
+                    <h3 class="beneficios__title">Competitive Pricing</h3>
+                    <p class="beneficios__text">
+                        We provide transparent, competitive pricing with no hidden costs. Quality construction that fits your budget.
+                    </p>
+                </div>
+                
+                <div class="beneficios__card">
+                    <div class="beneficios__icon-wrapper">
+                        <div class="beneficios__icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <h3 class="beneficios__title">Licensed & Insured</h3>
+                    <p class="beneficios__text">
+                        Fully licensed and insured construction company, giving you peace of mind throughout your project.
                     </p>
                 </div>
                 
@@ -200,33 +214,9 @@
                             <i class="fas fa-users"></i>
                         </div>
                     </div>
-                    <h3 class="beneficios__title">Sucessão Planejada</h3>
+                    <h3 class="beneficios__title">Expert Team</h3>
                     <p class="beneficios__text">
-                        Garanta uma transição suave do patrimônio para as próximas gerações, evitando conflitos e preservando a harmonia familiar.
-                    </p>
-                </div>
-                
-                <div class="beneficios__card">
-                    <div class="beneficios__icon-wrapper">
-                        <div class="beneficios__icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                    </div>
-                    <h3 class="beneficios__title">Gestão Eficiente</h3>
-                    <p class="beneficios__text">
-                        Centralize a administração de todos os bens em uma única estrutura, facilitando a gestão e o controle patrimonial.
-                    </p>
-                </div>
-                
-                <div class="beneficios__card">
-                    <div class="beneficios__icon-wrapper">
-                        <div class="beneficios__icon">
-                            <i class="fas fa-balance-scale"></i>
-                        </div>
-                    </div>
-                    <h3 class="beneficios__title">Segurança Jurídica</h3>
-                    <p class="beneficios__text">
-                        Conte com estruturas juridicamente sólidas e em conformidade com a legislação, garantindo tranquilidade e segurança.
+                        Our experienced professionals bring years of construction expertise to every project we undertake.
                     </p>
                 </div>
                 
@@ -236,9 +226,9 @@
                             <i class="fas fa-handshake"></i>
                         </div>
                     </div>
-                    <h3 class="beneficios__title">Consultoria Especializada</h3>
+                    <h3 class="beneficios__title">Customer Satisfaction</h3>
                     <p class="beneficios__text">
-                        Tenha acesso a especialistas com anos de experiência em planejamento patrimonial e holding familiar.
+                        Your satisfaction is our priority. We work closely with you to ensure your vision becomes reality.
                     </p>
                 </div>
             </div>
@@ -246,15 +236,15 @@
             <div class="beneficios__highlight">
                 <div class="beneficios__highlight-content">
                     <div class="beneficios__highlight-icon">
-                        <i class="fas fa-lightbulb"></i>
+                        <i class="fas fa-building"></i>
                     </div>
                     <div class="beneficios__highlight-text">
-                        <h3 class="beneficios__highlight-title">Holding Familiar: A Estrutura Ideal para Seu Patrimônio</h3>
+                        <h3 class="beneficios__highlight-title">Professional Construction Services</h3>
                         <p class="beneficios__highlight-description">
-                            Uma Holding Familiar é uma sociedade empresarial criada especificamente para administrar e proteger o patrimônio de uma família. Através desta estrutura, você pode consolidar todos os seus bens (imóveis, participações societárias, investimentos) em uma única empresa, obtendo benefícios como redução de impostos, proteção patrimonial e facilidade na sucessão familiar.
+                            Whether you're building a new home, renovating an existing property, or constructing a commercial facility, we have the expertise and resources to handle projects of any size. Our comprehensive approach ensures every aspect of your construction project is managed with precision and care.
                         </p>
                         <p class="beneficios__highlight-description">
-                            Nossa equipe especializada desenvolve soluções personalizadas que se adaptam às necessidades específicas de cada família, garantindo que seu patrimônio seja protegido e otimizado para as gerações futuras.
+                            From initial consultation to final walkthrough, we maintain the highest standards of quality and professionalism. Contact us today to discuss your construction needs and discover how we can help bring your project to life.
                         </p>
                     </div>
                 </div>
@@ -266,78 +256,78 @@
     <section class="faq-section">
         <div class="container">
             <div class="section__header">
-                <h2 class="section__title">Dúvidas <span class="section__title--golden">Frequentes</span></h2>
+                <h2 class="section__title">Frequently Asked <span class="section__title--golden">Questions</span></h2>
                 <div class="section__divider"></div>
-                <p class="section__subtitle">Encontre respostas rápidas e confiáveis para as principais dúvidas dos nossos clientes</p>
+                <p class="section__subtitle">Find quick and reliable answers to common questions about our construction services</p>
             </div>
             
             <div class="faq-section__list">
                 <div class="faq-section__item">
                     <div class="faq-section__question">
-                        <h3 class="faq-section__question-text">O que é uma holding familiar e por que considerar essa estrutura?</h3>
+                        <h3 class="faq-section__question-text">What types of construction projects do you handle?</h3>
                         <span class="faq-section__icon">
                             <i class="fas fa-plus"></i>
                         </span>
                     </div>
                     <div class="faq-section__answer">
                         <p class="faq-section__answer-text">
-                            Uma holding familiar é uma estrutura empresarial criada para gerir e proteger o patrimônio de uma família. Considera-se essa opção para proporcionar vantagens fiscais, proteção de ativos e facilitar a transição entre gerações.
+                            We handle a wide range of construction projects including residential homes, commercial buildings, renovations, remodeling, and additions. From small projects to large-scale construction, we have the expertise to deliver quality results.
                         </p>
                     </div>
                 </div>
                 
                 <div class="faq-section__item">
                     <div class="faq-section__question">
-                        <h3 class="faq-section__question-text">Quais são os benefícios do planejamento sucessório?</h3>
+                        <h3 class="faq-section__question-text">How long does a typical construction project take?</h3>
                         <span class="faq-section__icon">
                             <i class="fas fa-plus"></i>
                         </span>
                     </div>
                     <div class="faq-section__answer">
                         <p class="faq-section__answer-text">
-                            O planejamento sucessório oferece benefícios significativos, como evitar conflitos familiares, minimizar a carga tributária na transferência de patrimônio e assegurar uma transição suave de ativos para as próximas gerações.
+                            Project timelines vary depending on the scope and complexity of the work. During our initial consultation, we'll provide you with a detailed timeline for your specific project. We work efficiently to complete projects on schedule while maintaining quality standards.
                         </p>
                     </div>
                 </div>
                 
                 <div class="faq-section__item">
                     <div class="faq-section__question">
-                        <h3 class="faq-section__question-text">Como a holding familiar ajuda na proteção de ativos?</h3>
+                        <h3 class="faq-section__question-text">Are you licensed and insured?</h3>
                         <span class="faq-section__icon">
                             <i class="fas fa-plus"></i>
                         </span>
                     </div>
                     <div class="faq-section__answer">
                         <p class="faq-section__answer-text">
-                            A holding familiar auxilia na proteção de ativos ao separar o patrimônio pessoal e empresarial, reduzindo riscos legais e proporcionando maior segurança financeira.
+                            Yes, we are fully licensed and insured. We carry comprehensive liability insurance and workers' compensation coverage to protect you and our team throughout the construction process.
                         </p>
                     </div>
                 </div>
                 
                 <div class="faq-section__item">
                     <div class="faq-section__question">
-                        <h3 class="faq-section__question-text">Como escolher a melhor estratégia de holding para minha família?</h3>
+                        <h3 class="faq-section__question-text">Do you provide free estimates?</h3>
                         <span class="faq-section__icon">
                             <i class="fas fa-plus"></i>
                         </span>
                     </div>
                     <div class="faq-section__answer">
                         <p class="faq-section__answer-text">
-                            A escolha da estratégia de holding depende das metas e características específicas da família. Uma análise cuidadosa das necessidades e consultoria jurídica especializada podem orientar para a opção mais adequada.
+                            Yes, we offer free consultations and estimates for all construction projects. We'll assess your needs, discuss your vision, and provide a detailed quote with no obligation.
                         </p>
                     </div>
                 </div>
                 
                 <div class="faq-section__item">
                     <div class="faq-section__question">
-                        <h3 class="faq-section__question-text">Quando devo começar o planejamento sucessório?</h3>
+                        <h3 class="faq-section__question-text">What areas do you serve?</h3>
                         <span class="faq-section__icon">
                             <i class="fas fa-plus"></i>
                         </span>
                     </div>
                     <div class="faq-section__answer">
                         <p class="faq-section__answer-text">
-                            O ideal é começar o planejamento sucessório o mais cedo possível, quando a família ainda está em uma fase estável. No entanto, é possível iniciar em qualquer momento, adaptando estratégias conforme as circunstâncias evoluem.
+                            We serve clients throughout the region. Contact us to confirm if we service your area. We're committed to providing quality construction services wherever we operate.
                         </p>
                     </div>
                 </div>

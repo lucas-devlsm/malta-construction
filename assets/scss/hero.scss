@@ -2,19 +2,24 @@
 // Hero Section
 // ========================================
 .hero {
-    background: linear-gradient(135deg, rgba($color-blue, 0.92) 0%, rgba(darken($color-blue, 3%), 0.92) 50%, rgba(darken($color-blue, 6%), 0.92) 100%),
-                url('../img/BG-HERO.png') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba($color-dark, 0.95) 0%, rgba(darken($color-dark, 5%), 0.95) 100%),
+                url('../img/bg-hero.png') center/cover no-repeat;
     color: $color-white;
-    padding: 120px 0 100px;
+    padding: 120px 0 120px;
     position: relative;
     overflow: hidden;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
     
     @media (max-width: 968px) {
-        padding: 100px 0 80px;
+        padding: 120px 0 100px;
+        min-height: auto;
     }
     
     @media (max-width: 576px) {
-        padding: 80px 0 60px;
+        padding: 100px 0 80px;
+        min-height: auto;
     }
     
     &::before {
@@ -24,7 +29,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(219,195,119,0.08)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+        background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(238,103,47,0.12)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
         opacity: 0.4;
         animation: gridMove 20s linear infinite;
     }
@@ -57,13 +62,13 @@
     
     &__content {
         display: grid;
-        grid-template-columns: 1.15fr 0.85fr;
-        gap: 6rem;
-        align-items: flex-start;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 5rem;
+        align-items: center;
         
         @media (max-width: 968px) {
             grid-template-columns: 1fr;
-            gap: 4rem;
+            gap: 3rem;
             align-items: center;
         }
     }
@@ -80,48 +85,56 @@
     
     &__title {
         font-family: $font-heading;
-        font-size: 2.5rem;
-        font-weight: 500;
-        margin-bottom: 1.25rem;
-        line-height: 1.3;
-        color: $color-golden;
-        letter-spacing: 0.5px;
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 1.75rem;
+        line-height: 1.15;
+        color: $color-white;
+        letter-spacing: -1px;
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         animation: fadeInLeft 0.8s ease-out forwards;
         opacity: 0;
         
+        span {
+            color: $color-primary;
+            display: inline-block;
+            background: linear-gradient(135deg, $color-primary 0%, lighten($color-primary, 10%) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
         @media (max-width: 1200px) {
-            font-size: 2.25rem;
+            font-size: 3rem;
         }
         
         @media (max-width: 968px) {
-            font-size: 2rem;
+            font-size: 2.5rem;
             text-align: center;
-            margin-bottom: 1rem;
+            margin-bottom: 1.25rem;
             animation: fadeInUp 0.8s ease-out forwards;
-            line-height: 1.35;
-            word-wrap: break-word;
-            hyphens: auto;
+            line-height: 1.25;
             opacity: 0;
         }
         
         @media (max-width: 576px) {
-            font-size: 1.6rem;
-            line-height: 1.4;
+            font-size: 2rem;
+            line-height: 1.2;
             padding: 0 10px;
         }
     }
     
     &__description {
-        font-size: 1.15rem;
+        font-size: 1.3rem;
         margin-bottom: 0;
         color: rgba($color-white, 0.9);
         line-height: 1.8;
-        max-width: 95%;
-        font-weight: 300;
+        max-width: 90%;
+        font-weight: 400;
         animation: fadeInUp 0.8s ease-out 0.3s both;
         
         @media (max-width: 968px) {
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             text-align: center;
             max-width: 100%;
         }
@@ -160,56 +173,37 @@
         &::before {
             content: '';
             position: absolute;
-            width: 420px;
-            height: 420px;
-            border-radius: 50%;
-            border: 2px solid transparent;
-            border-top-color: $color-golden;
-            border-right-color: rgba($color-golden, 0.6);
-            border-bottom-color: rgba($color-golden, 0.3);
-            border-left-color: rgba($color-golden, 0.6);
-            animation: rotateCircle 8s linear infinite;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            background: linear-gradient(135deg, $color-primary 0%, darken($color-primary, 10%) 100%);
+            opacity: 0.15;
+            filter: blur(40px);
             z-index: 0;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            
-            @media (max-width: 968px) {
-                width: 340px;
-                height: 340px;
-            }
-            
-            @media (max-width: 576px) {
-                width: 300px;
-                height: 300px;
-            }
+            animation: pulseGlow 3s ease-in-out infinite;
         }
         
         &::after {
             content: '';
             position: absolute;
-            width: 460px;
-            height: 460px;
-            border-radius: 50%;
-            border: 1.5px solid transparent;
-            border-top-color: rgba($color-golden, 0.4);
-            border-right-color: rgba($color-golden, 0.2);
-            border-bottom-color: rgba($color-golden, 0.1);
-            border-left-color: rgba($color-golden, 0.3);
-            animation: rotateCircle 12s linear infinite reverse;
+            width: 450px;
+            height: 450px;
+            border-radius: 30px;
+            border: 3px solid rgba($color-primary, 0.3);
+            animation: rotateRoundedSquare 20s linear infinite;
             z-index: 0;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             
             @media (max-width: 968px) {
-                width: 380px;
-                height: 380px;
+                width: 350px;
+                height: 350px;
             }
             
             @media (max-width: 576px) {
-                width: 340px;
-                height: 340px;
+                width: 300px;
+                height: 300px;
             }
         }
         
@@ -226,29 +220,34 @@
         }
         
         img {
-            width: 380px;
-            height: 380px;
-            max-width: 380px;
-            border-radius: 50%;
-            border: 4px solid $color-golden;
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5),
-                        0 0 0 8px rgba($color-golden, 0.1),
-                        0 0 0 16px rgba($color-golden, 0.05);
+            width: 400px;
+            height: 400px;
+            max-width: 400px;
+            border-radius: 30px;
+            border: 5px solid $color-primary;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4),
+                        0 0 0 10px rgba($color-primary, 0.15),
+                        0 0 0 20px rgba($color-primary, 0.08);
             object-fit: cover;
             position: relative;
-            background: transparent;
+            background: $color-dark;
             z-index: 1;
+            transition: transform 0.3s ease;
+            
+            &:hover {
+                transform: scale(1.02);
+            }
             
             @media (max-width: 968px) {
-                width: 300px;
-                height: 300px;
-                max-width: 300px;
+                width: 320px;
+                height: 320px;
+                max-width: 320px;
             }
             
             @media (max-width: 576px) {
-                width: 260px;
-                height: 260px;
-                max-width: 260px;
+                width: 280px;
+                height: 280px;
+                max-width: 280px;
             }
         }
     }
@@ -298,7 +297,7 @@
     }
 }
 
-@keyframes rotateCircle {
+@keyframes rotateRoundedSquare {
     from {
         transform: translate(-50%, -50%) rotate(0deg);
     }
@@ -312,7 +311,7 @@
 // ========================================
 .solucoes {
     padding: 120px 0;
-    background-color: #f8f9fa;
+    background-color: $color-surface;
     position: relative;
     overflow: hidden;
     
@@ -332,28 +331,41 @@
     }
     
     &__card {
-        background-color: $color-white;
-        padding: 3rem 2.5rem;
-        border-radius: 16px;
-        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+        background-color: $color-surface-2;
+        padding: 0;
+        border-radius: 24px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
         transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        border-top: 4px solid $color-golden;
+        border: 2px solid transparent;
         position: relative;
         overflow: hidden;
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(40px);
         animation: fadeInUpCard 0.6s ease-out forwards;
         
         &:nth-child(1) {
-            animation-delay: 0.2s;
+            animation-delay: 0.1s;
         }
         
         &:nth-child(2) {
-            animation-delay: 0.4s;
+            animation-delay: 0.2s;
         }
         
         &:nth-child(3) {
-            animation-delay: 0.6s;
+            animation-delay: 0.3s;
+        }
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, $color-primary, lighten($color-primary, 15%));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
         }
         
         &::after {
@@ -363,55 +375,79 @@
             right: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba($color-golden, 0.03) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba($color-primary, 0.05) 0%, transparent 70%);
             opacity: 0;
             transition: opacity 0.5s ease;
         }
         
         &:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+            transform: translateY(-15px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+            border-color: rgba($color-primary, 0.2);
+            
+            &::before {
+                transform: scaleX(1);
+            }
             
             &::after {
                 opacity: 1;
             }
             
+            .solucoes__image img {
+                transform: scale(1.1);
+            }
+            
             .solucoes__icon {
-                transform: scale(1.15) rotate(5deg);
-                background: linear-gradient(135deg, $color-golden, lighten($color-golden, 12%));
+                transform: scale(1.15) rotate(8deg);
+                background: linear-gradient(135deg, $color-primary, lighten($color-primary, 12%));
                 color: $color-white;
-                box-shadow: 0 8px 20px rgba($color-golden, 0.3);
+                box-shadow: 0 12px 30px rgba($color-primary, 0.4);
             }
             
             .solucoes__card-link {
-                color: darken($color-golden, 15%);
+                color: $color-primary;
                 gap: 0.75rem;
                 
                 i {
-                    transform: translateX(5px);
+                    transform: translateX(8px);
                 }
             }
         }
+    }
+    
+    &__image {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
         
         @media (max-width: 768px) {
-            padding: 2.5rem 2rem;
+            height: 220px;
         }
     }
     
     &__icon {
-        width: 75px;
-        height: 75px;
+        width: 90px;
+        height: 90px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(135deg, rgba($color-golden, 0.12), rgba($color-golden, 0.2));
-        border-radius: 16px;
-        margin-bottom: 1.75rem;
-        color: $color-golden;
-        font-size: 2.2rem;
+        background: linear-gradient(135deg, rgba($color-primary, 0.1), rgba($color-primary, 0.15));
+        border-radius: 20px;
+        margin: -45px auto 2rem;
+        color: $color-primary;
+        font-size: 2.5rem;
         transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
-        box-shadow: 0 4px 15px rgba($color-golden, 0.15);
+        box-shadow: 0 6px 20px rgba($color-primary, 0.15);
+        z-index: 2;
         
         i {
             z-index: 1;
@@ -419,36 +455,46 @@
         }
     }
     
-    &__card-title {
-        font-family: $font-heading;
-        font-size: 1.85rem;
-        color: $color-blue;
-        margin-bottom: 1.5rem;
-        font-weight: 600;
-        line-height: 1.3;
-        letter-spacing: -0.3px;
+    &__card-content {
+        padding: 0 2.5rem 3rem;
         
         @media (max-width: 768px) {
-            font-size: 1.6rem;
+            padding: 0 2rem 2.5rem;
+        }
+    }
+    
+    &__card-title {
+        font-family: $font-heading;
+        font-size: 2rem;
+        color: $color-dark;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        line-height: 1.3;
+        letter-spacing: -0.5px;
+        text-align: center;
+        
+        @media (max-width: 768px) {
+            font-size: 1.75rem;
             margin-bottom: 1.25rem;
         }
     }
     
     &__card-text {
         color: $color-text-light;
-        margin-bottom: 2rem;
-        line-height: 1.85;
-        font-size: 1.05rem;
+        margin-bottom: 2.5rem;
+        line-height: 1.8;
+        font-size: 1.1rem;
+        text-align: center;
         
         @media (max-width: 768px) {
             font-size: 1rem;
-            margin-bottom: 1.75rem;
-            line-height: 1.8;
+            margin-bottom: 2rem;
+            line-height: 1.75;
         }
     }
     
     &__card-link {
-        color: $color-golden;
+        color: $color-primary;
         text-decoration: none;
         font-weight: 600;
         display: inline-flex;
@@ -466,7 +512,7 @@
         }
         
         &:hover {
-            color: darken($color-golden, 18%);
+            color: darken($color-primary, 18%);
         }
     }
 }
@@ -486,27 +532,27 @@
 // Sócios Section
 // ========================================
 .socios {
-    padding: 120px 0;
-    background-color: $color-white;
+    padding: 140px 0;
+    background: linear-gradient(180deg, $color-surface 0%, $color-white 100%);
     
     @media (max-width: 768px) {
-        padding: 80px 0;
+        padding: 100px 0;
     }
     
     &__content {
         display: flex;
         flex-direction: column;
-        gap: 6rem;
+        gap: 7rem;
         
         @media (max-width: 768px) {
-            gap: 4rem;
+            gap: 5rem;
         }
     }
     
     &__item {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        gap: 5rem;
         align-items: center;
         opacity: 0;
         animation: fadeInUp 0.8s ease-out forwards;
@@ -547,14 +593,15 @@
     
     &__image {
         position: relative;
-        border-radius: 20px;
+        border-radius: 24px;
         overflow: hidden;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 25px 70px rgba(0, 0, 0, 0.2);
         transition: transform 0.5s ease, box-shadow 0.5s ease;
-        max-height: 420px;
+        max-height: 450px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border: 3px solid rgba($color-primary, 0.1);
         
         &::before {
             content: '';
@@ -563,15 +610,16 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba($color-golden, 0.1) 0%, transparent 100%);
+            background: linear-gradient(135deg, rgba($color-primary, 0.15) 0%, transparent 100%);
             z-index: 1;
             opacity: 0;
             transition: opacity 0.5s ease;
         }
         
         &:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+            transform: translateY(-12px);
+            box-shadow: 0 35px 100px rgba(0, 0, 0, 0.25);
+            border-color: rgba($color-primary, 0.3);
             
             &::before {
                 opacity: 1;
@@ -585,20 +633,20 @@
         img {
             width: 100%;
             height: 100%;
-            max-height: 420px;
+            max-height: 450px;
             display: block;
-            border-radius: 20px;
+            border-radius: 24px;
             transition: transform 0.5s ease;
             object-fit: cover;
             object-position: center top;
             
             @media (max-width: 768px) {
-                max-height: 350px;
+                max-height: 380px;
             }
         }
         
         @media (max-width: 768px) {
-            max-height: 350px;
+            max-height: 380px;
         }
     }
     
@@ -608,45 +656,46 @@
     
     &__name {
         font-family: $font-heading;
-        font-size: 2.25rem;
-        color: $color-blue;
-        margin-bottom: 0.5rem;
-        font-weight: 600;
-        letter-spacing: -0.5px;
+        font-size: 2.5rem;
+        color: $color-dark;
+        margin-bottom: 0.75rem;
+        font-weight: 800;
+        letter-spacing: -0.8px;
+        line-height: 1.2;
         
         @media (max-width: 768px) {
-            font-size: 1.9rem;
+            font-size: 2rem;
         }
     }
     
     &__role {
-        font-size: 1.1rem;
-        color: $color-golden;
-        font-weight: 600;
+        font-size: 1.15rem;
+        color: $color-primary;
+        font-weight: 700;
         margin-bottom: 2rem;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
         
         @media (max-width: 768px) {
-            font-size: 1rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            margin-bottom: 1.75rem;
         }
     }
     
     &__description {
-        font-size: 1.05rem;
+        font-size: 1.1rem;
         color: $color-text-light;
         line-height: 1.9;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.75rem;
         
         &:last-child {
             margin-bottom: 0;
         }
         
         @media (max-width: 768px) {
-            font-size: 1rem;
-            line-height: 1.8;
-            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+            line-height: 1.85;
+            margin-bottom: 1.5rem;
         }
     }
 }
@@ -655,8 +704,8 @@
 // CTA Section
 // ========================================
 .cta-section {
-    padding: 100px 0;
-    background: linear-gradient(135deg, $color-blue 0%, darken($color-blue, 5%) 100%);
+    padding: 120px 0;
+    background: linear-gradient(135deg, $color-dark 0%, darken($color-dark, 8%) 100%);
     color: $color-white;
     position: relative;
     overflow: hidden;
@@ -668,16 +717,27 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(219,195,119,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-        opacity: 0.3;
+        background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(238,103,47,0.15)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+        opacity: 0.4;
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -20%;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba($color-primary, 0.1) 0%, transparent 70%);
+        border-radius: 50%;
     }
     
     @media (max-width: 768px) {
-        padding: 80px 0;
+        padding: 100px 0;
     }
     
     &__content {
-        max-width: 800px;
+        max-width: 900px;
         margin: 0 auto;
         text-align: center;
         position: relative;
@@ -686,33 +746,35 @@
     
     &__title {
         font-family: $font-heading;
-        font-size: 2.5rem;
-        color: $color-golden;
-        margin-bottom: 1.5rem;
-        font-weight: 600;
+        font-size: 3rem;
+        color: $color-white;
+        margin-bottom: 2rem;
+        font-weight: 800;
+        letter-spacing: -0.5px;
         animation: fadeInUp 0.8s ease-out;
+        line-height: 1.2;
         
         @media (max-width: 768px) {
-            font-size: 2rem;
+            font-size: 2.25rem;
         }
     }
     
     &__text {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: rgba($color-white, 0.9);
-        margin-bottom: 2.5rem;
+        margin-bottom: 3rem;
         line-height: 1.8;
         animation: fadeInUp 0.8s ease-out 0.2s both;
         
         @media (max-width: 768px) {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
+            font-size: 1.15rem;
+            margin-bottom: 2.5rem;
         }
     }
     
     &__buttons {
         display: flex;
-        gap: 1.5rem;
+        gap: 2rem;
         justify-content: center;
         flex-wrap: wrap;
         animation: fadeInUp 0.8s ease-out 0.4s both;
@@ -720,6 +782,7 @@
         @media (max-width: 576px) {
             flex-direction: column;
             align-items: stretch;
+            gap: 1.5rem;
         }
     }
 }

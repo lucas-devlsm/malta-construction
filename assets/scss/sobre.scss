@@ -2,11 +2,14 @@
 // Sobre Nós Page
 // ========================================
 .sobre-hero {
-    padding: 100px 0 80px;
-    background: linear-gradient(135deg, rgba($color-blue, 0.92) 0%, rgba(darken($color-blue, 3%), 0.92) 50%, rgba(darken($color-blue, 6%), 0.92) 100%),
-                url('../img/BG-HERO.png') center/cover no-repeat;
+    padding: 140px 0 100px;
+    background: linear-gradient(135deg, rgba($color-dark, 0.95) 0%, rgba(darken($color-dark, 5%), 0.95) 100%),
+                url('../img/bg-hero.png') center/cover no-repeat;
     position: relative;
     color: $color-white;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
     
     .container {
         position: relative;
@@ -14,33 +17,45 @@
     }
     
     @media (max-width: 768px) {
-        padding: 80px 0 60px;
+        padding: 120px 0 80px;
+        min-height: auto;
     }
     
     .section__title {
         color: $color-white;
+        font-size: 3.5rem;
+        font-weight: 800;
         
         &--golden {
-            color: $color-golden;
+            color: $color-primary;
+            background: linear-gradient(135deg, $color-primary 0%, lighten($color-primary, 10%) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        @media (max-width: 768px) {
+            font-size: 2.5rem;
         }
     }
     
     .section__subtitle {
-        color: rgba($color-white, 0.9);
+        color: rgba($color-white, 0.95);
+        font-size: 1.25rem;
     }
     
     .breadcrumb__nav {
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
         
         @media (max-width: 768px) {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
     }
 }
 
 .sobre-mvv {
     padding: 100px 0;
-    background-color: $color-white;
+    background-color: $color-surface-2;
     
     @media (max-width: 768px) {
         padding: 80px 0;
@@ -65,7 +80,7 @@
     &__card {
         text-align: center;
         padding: 3rem 2rem;
-        background: linear-gradient(135deg, $color-blue 0%, darken($color-blue, 3%) 100%);
+        background: linear-gradient(135deg, $color-dark 0%, darken($color-dark, 3%) 100%);
         border-radius: 16px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -81,14 +96,14 @@
         &:hover {
             transform: translateY(-10px);
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
-            border-top-color: $color-golden;
-            background: linear-gradient(135deg, darken($color-blue, 2%) 0%, darken($color-blue, 5%) 100%);
+            border-top-color: $color-primary;
+            background: linear-gradient(135deg, darken($color-dark, 2%) 0%, darken($color-dark, 5%) 100%);
             
             .sobre-mvv__icon {
                 transform: scale(1.1) rotate(5deg);
-                background: linear-gradient(135deg, $color-golden, lighten($color-golden, 10%));
+                background: linear-gradient(135deg, $color-primary, lighten($color-primary, 10%));
                 color: $color-white;
-                box-shadow: 0 8px 25px rgba($color-golden, 0.3);
+                box-shadow: 0 8px 25px rgba($color-primary, 0.3);
             }
         }
     }
@@ -97,12 +112,12 @@
         width: 90px;
         height: 90px;
         border-radius: 20px;
-        background: linear-gradient(135deg, rgba($color-golden, 0.1), rgba($color-golden, 0.05));
+        background: linear-gradient(135deg, rgba($color-primary, 0.1), rgba($color-primary, 0.05));
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 2.5rem;
-        color: $color-golden;
+        color: $color-primary;
         margin: 0 auto 2rem;
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -131,11 +146,11 @@
 }
 
 .sobre-historia {
-    padding: 100px 0;
-    background: linear-gradient(180deg, #f8f9fa 0%, $color-white 100%);
+    padding: 140px 0;
+    background: linear-gradient(180deg, $color-white 0%, $color-surface 100%);
     
     @media (max-width: 768px) {
-        padding: 80px 0;
+        padding: 100px 0;
     }
     
     &__header {
@@ -186,27 +201,33 @@
     
     &__image {
         position: relative;
-        border-radius: 20px;
+        border-radius: 28px;
         overflow: hidden;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+        border: 3px solid rgba($color-primary, 0.1);
+        transition: all 0.5s ease;
         
         img {
             width: 100%;
             height: auto;
             display: block;
-            border-radius: 20px;
+            border-radius: 28px;
             transition: transform 0.5s ease;
         }
         
         &:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.25);
+            border-color: rgba($color-primary, 0.3);
+            
             img {
-                transform: scale(1.02);
+                transform: scale(1.03);
             }
         }
         
         @media (max-width: 968px) {
             order: -1;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
     }
 }

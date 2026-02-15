@@ -2,9 +2,10 @@
 // Footer
 // ========================================
 .footer {
-    background-color: $color-blue;
+    background: linear-gradient(135deg, $color-dark 0%, darken($color-dark, 5%) 100%);
     color: $color-white;
-    padding: 60px 0 20px;
+    padding: 80px 0 30px;
+    border-top: 1px solid rgba($color-primary, 0.1);
     
     &__content {
         display: grid;
@@ -26,17 +27,19 @@
     
     &__title {
         font-family: $font-heading;
-        font-size: 1.75rem;
-        color: $color-golden;
-        margin-bottom: 1rem;
-        font-weight: 600;
+        font-size: 2rem;
+        color: $color-primary;
+        margin-bottom: 1.25rem;
+        font-weight: 800;
+        letter-spacing: -0.5px;
     }
     
     &__subtitle {
-        font-size: 1.2rem;
-        color: $color-golden;
-        margin-bottom: 1rem;
-        font-weight: 600;
+        font-size: 1.3rem;
+        color: $color-primary;
+        margin-bottom: 1.25rem;
+        font-weight: 700;
+        letter-spacing: -0.3px;
     }
     
     &__description {
@@ -54,23 +57,26 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 40px;
-        height: 40px;
-        background-color: rgba($color-golden, 0.1);
-        border-radius: 50%;
-        color: $color-golden;
+        width: 48px;
+        height: 48px;
+        background: linear-gradient(135deg, rgba($color-primary, 0.15), rgba($color-primary, 0.1));
+        border-radius: 12px;
+        color: $color-primary;
         text-decoration: none;
         transition: all 0.3s ease;
+        border: 2px solid transparent;
         
         &:hover {
-            background-color: $color-golden;
-            color: $color-blue;
-            transform: translateY(-3px);
+            background: linear-gradient(135deg, $color-primary, darken($color-primary, 8%));
+            color: $color-white;
+            transform: translateY(-4px) scale(1.05);
+            border-color: rgba($color-primary, 0.3);
+            box-shadow: 0 8px 25px rgba($color-primary, 0.4);
         }
         
         svg {
-            width: 20px;
-            height: 20px;
+            width: 22px;
+            height: 22px;
         }
     }
     
@@ -79,15 +85,17 @@
     }
     
     &__link {
-        color: rgba($color-white, 0.8);
+        color: rgba($color-white, 0.85);
         text-decoration: none;
         display: block;
-        padding: 0.5rem 0;
-        transition: color 0.3s ease, padding-left 0.3s ease;
+        padding: 0.75rem 0;
+        transition: all 0.3s ease;
+        font-weight: 500;
         
         &:hover {
-            color: $color-golden;
-            padding-left: 10px;
+            color: $color-primary;
+            padding-left: 12px;
+            transform: translateX(5px);
         }
     }
     
@@ -102,10 +110,11 @@
     
     &__bottom {
         text-align: center;
-        padding-top: 2rem;
-        border-top: 1px solid rgba($color-white, 0.1);
-        color: rgba($color-white, 0.6);
-        font-size: 0.9rem;
+        padding-top: 3rem;
+        border-top: 1px solid rgba($color-white, 0.15);
+        color: rgba($color-white, 0.7);
+        font-size: 0.95rem;
+        font-weight: 500;
     }
 }
 
