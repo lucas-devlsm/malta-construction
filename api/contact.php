@@ -2,7 +2,7 @@
 
 <main>
     <!-- Contato Hero -->
-    <section class="sobre-hero" style="background-image: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(13, 13, 13, 0.95) 100%), url('/assets/img/bg-hero.png');">
+    <section class="sobre-hero">
         <div class="container">
             <!-- Breadcrumb -->
             <nav class="breadcrumb__nav" aria-label="Breadcrumb">

@@ -2,7 +2,7 @@
 
 <main>
     <!-- Hero Section ------->
-    <section class="hero" id="inicio" style="background-image: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(13, 13, 13, 0.95) 100%), url('/assets/img/bg-hero.png');">
+    <section class="hero" id="inicio">
         <div class="container">
             <div class="hero__content">
                 <div class="hero__text">
